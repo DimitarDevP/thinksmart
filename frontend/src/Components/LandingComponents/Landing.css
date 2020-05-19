@@ -1,0 +1,14 @@
+.landing-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-page * {
+    font-family: 'Prime', sans-serif;
+}
+
+@media only screen and (max-width: 920px) {
+    .landing-page {
+        flex-direction: column;
+    }
+}

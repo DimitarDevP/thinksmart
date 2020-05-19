@@ -1,0 +1,32 @@
+.instructor-courses {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: left;
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+    min-height: 1000px;
+}
+.instructor-courses .course {
+    margin: 25px 20px !important;
+}
+
+
+@media only screen and (max-width : 920px){
+
+    .instructor-courses .course {
+        min-width: unset;
+        width: 200px;
+        height: 320px;
+        flex-direction: column;
+        margin: 30px auto !important;
+    }
+
+    .instructor-courses .course img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+}

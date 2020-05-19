@@ -1,0 +1,27 @@
+.results-container {
+    background: #e8ecf1;
+    min-height: 100vh;
+}
+
+.results {
+    display: flex;
+    width: 1440px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.results .course {
+    margin: 20px 10px !important;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width : 1080px) {
+    .results {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}

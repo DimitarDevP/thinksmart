@@ -1,0 +1,24 @@
+.landing-hero {
+    background: url('/test_assets/login-desktop.jpg') no-repeat center center;
+    width: 50%;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    flex: 1;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.landing-hero img {
+    width: 200px;
+    margin: 40px auto;
+}
+
+@media only screen and (max-width:920px) {
+    .landing-hero {
+        width: 100%;
+    }
+}

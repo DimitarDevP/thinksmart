@@ -1,0 +1,30 @@
+.question-card{
+    background: #FFF;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.question-title{
+    margin: 0px;
+    padding: 6px 8px;
+    color: #222;
+}
+
+.question-body-s{
+    margin: 0px;
+    padding: 4px 16px;
+    color: #888;
+}
+
+.question-date-s{
+    margin: 0px;
+    text-align: right;
+    padding: 4px 25px;
+    color: #888;
+}
+
+.question-link {
+    text-decoration: none;
+}

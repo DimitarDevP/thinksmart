@@ -1,0 +1,154 @@
+nav {
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Prime', sans-serif;
+    background: #2e3131;
+    transition: 300ms all;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 20;
+}
+
+nav.showing{
+    width: 450px;
+}
+
+nav::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #bdc3c7;
+    display: none;
+}
+
+nav::-webkit-scrollbar {
+	width: 10px;
+    background-color: #F5F5F5;
+    display: none;
+}
+
+nav::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    border-radius: 2.9px;
+    display: none;
+}
+
+nav a {
+    text-decoration: none !important;
+}
+
+nav h1 {
+    color: #FFF;
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 1.9em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a li {
+    list-style-type: none;
+    height: 70px;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 50px;
+    text-decoration: none;
+    transition: 80ms;
+}
+
+nav ul a li {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul a li:hover{
+    background: #bdc3c7;
+    padding-left: 80px;
+    color: #2e3131;
+}
+
+.toggle {
+    transition: 300ms all;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.toggle.showing {
+    left: 480px;
+}
+
+.bar{
+    height: 4px;
+    margin-top: 11px !important;
+    margin-bottom: 11px !important;
+    background: #2e3131;
+    transition-duration: 300ms;
+}
+
+.bar.showing{
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+
+.bar1{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.bar12{
+    width: 50px;
+}
+
+.bar3{
+    width: 30px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width : 800px) and (orientation : portrait){
+    nav.showing{
+        width: 100%;
+    }
+
+    .toggle.showing {
+        left: auto;
+        right: 40px;
+        top: 30px;
+    }
+
+    .bar.showing {
+        background: #FFF;
+    }
+    nav::-webkit-scrollbar-track {
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 800px) and (orientation : landscape){
+    nav.showing{
+        width: 100%;
+    }
+
+    .toggle.showing {
+        left: auto;
+        right: 40px;
+        top: 30px;
+    }
+
+    .bar.showing {
+        background: #FFF;
+    }
+    nav::-webkit-scrollbar-track {
+        display: block;
+    }
+}

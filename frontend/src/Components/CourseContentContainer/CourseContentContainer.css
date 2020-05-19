@@ -1,0 +1,62 @@
+.course-content-container {
+    padding: 150px 0px;
+    background: #e8ecf1;
+    min-height: 50vh;
+    font-family: 'Prime', sans-serif;
+}
+
+.content-part {
+    width: 920px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    background: #FFF;
+}
+
+.toggler {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
+.toggler h3 {
+    flex: 1;
+    margin: 0px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.toggler h2 {
+    width: 50px !important;
+    margin: 0px;
+}
+
+.video {
+    flex: 1;
+    width: 600px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+}
+
+.hidden-video {
+    height: 0px;
+    display: none;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+@media only screen and (max-width : 1080px){
+    .content-part {
+        width: 90%;
+    }
+    .video {
+        width: 100%;
+    }
+}

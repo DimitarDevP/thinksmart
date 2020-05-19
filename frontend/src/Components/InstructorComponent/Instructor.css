@@ -1,0 +1,49 @@
+.instructor-container *{
+    font-family: sans-serif;
+}
+
+.instructor-tab {
+    background: #e8ecf1;
+    height: calc(100% - 50px);
+    width: calc(100% - 400px);
+    left: 400px;
+    top: 50px;
+    position: fixed;
+    z-index: -1;
+    overflow-y: scroll;
+}
+
+.instructor-tab::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2e3131;
+}
+
+.instructor-tab::-webkit-scrollbar {
+	width: 10px;
+    background-color: #ECF0F1;
+}
+
+.instructor-tab::-webkit-scrollbar-thumb {
+    background-color: #e8ecf1;
+    border-radius: 2.9px;
+}
+
+@media only screen and (max-width : 800px) and (orientation : portrait){
+    .instructor-tab {
+        overflow: hidden;
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+}
+
+@media only screen and (max-width : 800px) and (orientation : landscape){
+    .instructor-tab {
+        overflow: hidden;
+        position: static;
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+}

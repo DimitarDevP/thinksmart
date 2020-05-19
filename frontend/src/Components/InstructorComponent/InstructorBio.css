@@ -1,0 +1,34 @@
+.instructor-bio {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.bio {
+    margin: 40px 0px;
+}
+
+.bio h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.bio h3 {
+    margin-left: 20px;
+    line-height: 1.4em;
+    color: #333;
+}
+
+@media only screen and (max-width : 800px) and (orientation : portrait){
+    .instructor-bio {
+        text-align: center;
+    }
+
+    .bio h3 {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width : 800px) and (orientation : landscape){
+    
+}
